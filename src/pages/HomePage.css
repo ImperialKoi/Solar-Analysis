@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.custom-shape-divider-top-1722105340 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: show;
+  line-height: 0;
+}
+
+.shape-fill {
+    fill: #a3ffaf;
+  }
+
+/* src/styles.module.css */
+.body {
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+  background: #202731;
+  overflow-x: hidden;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  padding-top: 100px;
+}
+
+.blue { background: #1D1B4B; }
+.red { background: hsl(5, 72%, 53%); }
+.pink { background: #2a3b73; overflow: hidden; }
+.dark { background: #0f0f10; }
+
+.curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.curve::before, .curve::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+}
+
+.curve::before {
+  transform: translate(85%, 60%);
+  background-color: #2a3b73;
+}
+
+.curve::after {
+  transform: translate(-4%, 40%);
+  background-color: #1D1B4B;
+  z-index: 1;
+}
+
+.bubble::after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #0f0f10;
+  height: 85%;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(103% + 1.3px);
+  height: 262px;
+}
+
+.wave .shape-fill {
+  fill: hsl(240, 3%, 6%);
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 { background-image: url('./layer1.svg'); }
+.layer2 { background-image: url('./layer2.svg'); }
+.flip { transform: rotate(180deg); }
+
+.blob-motion { position: absolute; transform: translateY(-20%); z-index: 0; }
+.blob-content { z-index: 1; }
+.blobs { width: 100%; background: url('./blobs.svg') no-repeat bottom / cover; }
+
+.curve-filler {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curve-filler svg {
+  width: 100%;
+  height: auto;
+}

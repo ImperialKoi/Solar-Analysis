@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.leaflet-circle {
+    stroke: theme('colors.leafGreen'); 
+    fill: theme('colors.leafFillGreen'); 
+    fill-opacity: 0.5;
+}
+.title {
+    font-family: 'Space Mono', monospace;
+}

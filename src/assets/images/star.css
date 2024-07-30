@@ -1,0 +1,4 @@
+.alert-heading-1 img {
+    display: inline-block; /* Ensures images are aligned horizontally */
+    margin-right: 2px; /* Adjust spacing between stars as needed */
+}
